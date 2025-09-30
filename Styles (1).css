@@ -1,0 +1,219 @@
+/* === Global Styles === */
+/* These rules apply to the ENTIRE website */
+
+body {
+    background-color: #FFFFFF; /* White background */
+    color: #212529; /* Dark Gray text */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #007BFF; /* Electric blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700; /* Yellow */
+}
+
+button {
+    background-color: #DC3545; /* Bright Red */
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+
+/* === Header & Footer Styles === */
+/* These rules style the header and footer on EVERY page */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #dee2e6;
+}
+
+header img {
+    height: 50px; 
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; 
+}
+
+footer {
+    padding: 20px 30px;
+    background-color: #343a40; /* Dark background */
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+
+/* === Homepage Main Content Styles === */
+/* These rules ONLY style the content on the Homepage (index.html) */
+
+main section {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#product-images {
+    display: flex;
+    gap: 20px;
+}
+
+#product-images img {
+    width: 50%;
+}
+
+#perks {
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.perks-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.perk-box {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    flex: 1;
+}
+
+#categories ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;
+}
+
+/* === Gallery Page Styles === */
+/* These rules ONLY style the content on the Gallery page */
+
+.product-grid {
+    /* Using CSS Grid for a clean 3-column layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between the grid items */
+    margin-top: 20px;
+}
+
+.product-item {
+    /* Styles for each individual product box */
+    border: 1px solid #dee2e6;
+    border-radius: 5px; /* Adds slightly rounded corners */
+    padding: 20px;
+    text-align: center; /* Centers the image, text, and button */
+}
+
+.product-item img {
+    /* Ensures the image fits nicely in the box */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* === About Us Page Styles === */
+/* These rules ONLY style the content on the About Us page */
+
+#hours, #contact-form {
+    /* Sets a max-width and centers these sections on the page */
+    max-width: 600px;
+    margin: 40px auto; /* Adds space above/below and centers horizontally */
+    text-align: left; /* Aligns text to the left within these centered boxes */
+}
+
+#hours p {
+    /* Creates the "bordered table" look for the hours */
+    display: flex;
+    justify-content: space-between; /* Pushes day and time to opposite ends */
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#contact-form input,
+#contact-form textarea {
+    /* Styles the form fields for a modern look */
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px; /* Adds space between fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Prevents padding from affecting the width */
+}
+
+#contact-form button {
+    /* Adds a little space above the submit button */
+    margin-top: 10px;
+}
+
+/* === Schedule & Events Page Styles === */
+/* These rules ONLY style the content on the Schedule & Events page */
+
+#class-schedule {
+    /* Center the schedule and give it a max-width */
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+#class-schedule h4 {
+    /* Makes the day of the week stand out */
+    background-color: #f8f9fa;
+    padding: 8px;
+    margin-top: 20px;
+    border-top: 2px solid #dee2e6;
+}
+
+#upcoming-events {
+    /* Adds a background color to the whole section to make it pop */
+    background-color: #fffbe6; /* Light, energetic yellow */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#upcoming-events article {
+    /* This creates the "bordered box" for each event */
+    display: flex; /* Puts image and text side-by-side */
+    align-items: center; /* Vertically aligns image and text */
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    background-color: #FFFFFF; /* White background for the box itself */
+}
+
+#upcoming-events img {
+    max-width: 200px; /* Controls the size of the event image */
+    height: auto;
+}
